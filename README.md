@@ -160,7 +160,7 @@ This made us wonder: could these states correspond to what are known as torus kn
 
 ### Torus knots - sonifying closed paths on the torus surface
 
-If we follow a path on the torus that is looping through the hole q times ("minor circle") and revolves p times ("major circle") before joining its end and if p and q are relatively prime, we get what is called a torus knot. 
+If we follow a path on the torus that is looping through the hole q times ("minor circle") and revolves p times ("major circle") before joining its end and if p and q are relatively prime, we get what is called a torus knot. In this context we're especially interested in exploring the role of the parameters p, q. Since p, q define different types of torus knots, perhaps by manipulating these values, we can better understand the underlying structure of the transformations. For our sonification study, we focus for now only on prime torus knots. These are knots that form a single path — not multiple loops (links) . 
 
 We can implement p and q in the Torus equation like this:
 
@@ -171,7 +171,7 @@ z = ~a * sin(~v * ~q);
 [x, y, z];
 ```
 
-where \~c is still the center (major radius) and \~a the axis (minor radius). \~p and \~q must be both integers and \~u = \~v. This parameterization defines a (p,q) torus knot as a closed curve that winds p times around the torus's major axis and q times around its minor axis.  
+where \~c is still the center (major radius) and \~a the axis (minor radius). \~p and \~q must be both integers and \~u = \~v. This parameterization defines a (p,q) torus knot as a closed curve that winds p times around the torus's major axis and q times around its minor axis.
 
 As \~u = \~v, we replace \~u and \~v with \~phi:
 
@@ -210,7 +210,7 @@ Ndef(\torusKnot, {
 s.scope; // use x, y scope
 ```
 
-We can calculate Torus knots by using the greatest common divisor of p and q (as p and q relatively prime) and add them into a list:
+We can calculate Torus knots by using the greatest common divisor (gcd) of p and q (as p and q relatively prime) and add them into a list:
 
 ```sc
 (
@@ -229,17 +229,15 @@ a = ~knots.flop;
 b = a[a.size-1];
 ~csSorted = b.order.collect({|x| ~knots[x]});
 )
+```
 
-// why there are some nils, but they don't appear in ~knots?
+This list currently contains duplicates as a Torus knot (p, q) is equivalent to a Torus knot (q, p). However, as (p, q) and (q, p) return different frequency relations, we choose to keep them due to musical reasons.
 
-
-// This list currently contains duplicates as a Torus knot (p, q) is equivalent to a Torus knot (q, p). However, as (p, q) and (q, p) return different frequency relations, we choose to keep them due to musical reasons.
-
+```sc
 // accessing:
 ~knots[4]; // Torus knot at index 4
 a.[a.size-1]; // get all crossings
 ~knots[a.[a.size-1].findAll([3])]; // returns all knots with 3 crossings
-
 
 // playing the knots:
 (freq: ~knots.choose[0] * 30).play; // playing a random knot with default synth
@@ -258,7 +256,6 @@ Ndef(\torusKnot, {
 	sig * 0.1;
 }).play
 )
-
 
 // sonifying the list of knots:
 (
@@ -280,16 +277,9 @@ Routine({
 s.scope;
 ```
 
-  
-We're especially interested in exploring the role of the parameters (u, v) in this context. Since (u, v) define different types of torus knots, perhaps by manipulating these values, we can better understand the underlying structure of the transformations. 
+(As a minimal and intuitive form of interaction, we also brainstormed whether it's possible to treat a laptop trackpad as a kind of “unfolded torus diagram” — allowing us to explore different (u, v) values simply by tracing finger gestures across the surface. Could this tactile method provide an alternative way to navigate or sonify the torus knot space?)
 
-As a minimal and intuitive form of interaction, we also brainstormed whether it's possible to treat a laptop trackpad as a kind of “unfolded torus diagram” — allowing us to explore different (u, v) values simply by tracing finger gestures across the surface. Could this tactile method provide an alternative way to navigate or sonify the torus knot space?
-
- --> should be about parameters (p, q) ?
-
--> need one more paragraph to explain the parameterization (u,v), (p,q), and ϕ (siehe shuoxin_joseph_references)
-
---> insert a short SuperCollider example where we use the MousePad to navigate through p and q values?
+\--> insert a short SuperCollider example where we use the MousePad to navigate through p and q values?
 
 #### Define the path in unwrapped torus knots diagrams
 
@@ -300,8 +290,6 @@ As a minimal and intuitive form of interaction, we also brainstormed whether it'
 The diagram of the (3,4) torus knot represents the core idea of the path on a "flattened torus" - a torus "unwrapped" into a square 2D domain, where opposite edges are identified. The knot is represented as a continuous path that moves diagonally across the square. This path has a "wrapping pattern" (p,q), where (p,q) defines the type of a torus knot as a closed curve that winds p times around the torus's major axis and q times around its minor axis. This wrapping pattern makes each torus knot unique.
 
 The path is drawn as a line starting from the bottom-left and moving diagonally at a constant slope. Each time as the line exits the square on the right or top, it re-enters from the opposite side, creating the path traveling on the surface of a torus. Once the path returns to its starting point, a closed loops is formed — representing the torus knot.
-
-For our sonification study, we focus at the moment only on prime torus knots. These are knots that form a single path — not multiple loops. 
 
 Mathematically, this happens when (p,q) have no common factor other than 1: 
 
