@@ -297,7 +297,7 @@ As a minimal and intuitive form of interaction, we also brainstormed whether it'
 
 --> general, but very short introduction of 2d diagrams in topology needed?
 
-The diagram of the (3,4) torus knot represents the core idea of the path on a "flattened torus" - a torus "unwrapped" into a square 2D domain, where opposite edges are identified. The knot is represented as a continuous path that moves diagonally across the square. This path has a "wrapping pattern" (p,q), where (p,q) defines the type (or class?) of a torus knot as a closed curve that winds p times around the torus's major axis and q times around its minor axis. This wrapping pattern makes each torus knot unique.
+The diagram of the (3,4) torus knot represents the core idea of the path on a "flattened torus" - a torus "unwrapped" into a square 2D domain, where opposite edges are identified. The knot is represented as a continuous path that moves diagonally across the square. This path has a "wrapping pattern" (p,q), where (p,q) defines the type of a torus knot as a closed curve that winds p times around the torus's major axis and q times around its minor axis. This wrapping pattern makes each torus knot unique.
 
 The path is drawn as a line starting from the bottom-left and moving diagonally at a constant slope. Each time as the line exits the square on the right or top, it re-enters from the opposite side, creating the path traveling on the surface of a torus. Once the path returns to its starting point, a closed loops is formed — representing the torus knot.
 
