@@ -19,15 +19,12 @@ Topological Characteristics: 2d, orientable, 0 edges, 0 boundaries
 
 > Shuoxin: Does a torus have an "inside" and "outside"?
 
-- From a geometric / everyday perspective:   
-  Yes - if you're thinking about a 3D solid torus (like a donut), then we often intuitively say it is.
-- From a topological / mathematical perspective:   
-  No - A standard torus surface T² embedded in ℝ³ does not bound a volume in the same way a sphere does — it does not define a clear "inside" and "outside". --> ?
+  
+A torus embedded in 3D space can indeed be said to have a well-defined inside and outside that separates the space around it. What happens on the torus is you can define a continuous function that assigns to each point a vector (think of it as an arrow: v) pointing orthogonally outward or inward. If you zoom in on the surface of the torus, it looks locally like a little disc — a flat, round patch — and the arrow should be perpendicular to the disc. The key idea is  that you can define such a continuous family of vectors in a way that, even if you start at a point and go around a loop and return to the original point, the arrow still points the same way — This property is called orientability. 
 
-A torus is counter-intuitive in a lot of ways, when you move from the geometric surface to its topological, algebraical meanings.
+Because the torus is orientable, you can consistently define what's "inside" and what's "outside". Of course you can choose to call either side the "inside" — the choice of inside/outside corresponds to the choice of the arrow: v or -v for this vector, since both are perpendicular. 
 
-- it feels like a "donut" embedded in 3D space, but technically it is a 2-dimensional manifold;
-- it looks like it should have an "inside" and "outside", but topologically is actually just a surface with no edges, everything loops.
+In contrast, a Möbius strip doesn't allow for this kind of consistent choice — it's unorientable. If you try to define arrows the same way and move around the strip, you'll find the arrow flips direction when you return. That's why the Möbius strip has only one side and no clear separation between inside and outside.
 
 ## Möbius strip
 
@@ -56,13 +53,18 @@ Using imagination is one aspect of understanding the torus and other geometrical
 
 ## performative
 
-For the Speculative Sound Synthesis Symposium 2024 we have developed a lecture performance, addressing aspects of topology, sound synthesis and (counter-)intuition.
+For the Speculative Sound Synthesis Symposium 2024 we have developed a lecture performance, addressing aspects of topology, sound synthesis and (counter-)intuition. 
 
 ## parametrical
 
 Interpreting the Cartesian product of two circles i.e. a torus, by rotating two loudspeakers on different axes is a quite intuitive approach as soon as we understand the idea of two circles forming a torus. The result however is not that intuitive as we neither see or hear something that looks or sounds like a torus. This interpretation is an abstract interpretation of S¹×S¹. If we want to actually calculate S¹×S¹ and obtain discrete data that can be used for sound synthesis or sonification, we don't get around a paremetrical description of the Torus. As topology doesn't care about distance or any measures, paremetrizations might lead us somehow away from topology. However, parametrizations make it possible  to experience the structures intuitively by the means of sound and listening. 
 
 We found different ways to parametrically sonify topological structures:  
+
+- Torus as a Cartesian product of two circles
+- Torus and Möbius strip embedded in Euclidian space
+- Collection of points on the surface of a torus or Möbius strip
+- Unwrapped diagrams and Shepard tones
 
 ### Torus as a Cartesian product of two circles
 
@@ -166,7 +168,7 @@ https://mathworld.wolfram.com/MoebiusStrip.html
 
 ### Direct sonification of paths on the surface of a torus or a Möbius strip
 
-We've already done some experiments with the equations, but somehow skipped the most direct approach until David Pirro brought it up in a meeting and said "why don't you just .play the function?" Sometimes the most obvious and most intuitive things are too close to see. This is an adaption of some code examples David was sending us:
+We've already done some experiments with the equations, but somehow skipped the most direct approach until David Pirrò brought it up in a meeting and asked "why don't you just .play the function?" Sometimes the most obvious and most intuitive things are too close to see. This is an adaption of some code examples David was sending us:
 
 ```sc
 // torus
@@ -186,7 +188,7 @@ We've already done some experiments with the equations, but somehow skipped the 
 s.scope;
 ```
 
-For freqB = freq * 0.5 we get a path on the surface of the torus which is equivalent to the edge of a Möbius strip:
+For freqB = freq \* 0.5 we get a path on the surface of the torus which is equivalent to the edge of a Möbius strip:
 
 ```sc
 (
@@ -207,8 +209,7 @@ For freqB = freq * 0.5 we get a path on the surface of the torus which is equiva
 s.scope;
 ```
 
-  
-If we want to cover the surface of the Möbius strip in the same way as we did for the torus, we have to take in account that s ∈ \[−w, w\]. So instead of taking a single point on s, we implement the s ∈ \[−w, w\] as the traverse motion across the width of the strip. For this example we use again the variables corresponding to the Möbius strip:
+If we want to cover the surface of the Möbius strip in a similar way as we did for the torus, we have to take in account that s ∈ \[−w, w\]. So instead of taking a single point on s, we implement the s ∈ \[−w, w\] as the traverse motion across the width of the strip. For this example we use again the variables corresponding to the Möbius strip:
 
 ```sc
 (
@@ -232,7 +233,7 @@ s.scope;
 
 // which values would cover most of the Möbius strip surface?
 
-### similarities and transition (scope) 
+### Similarities and transition (scope) 
 
 While experimenting with different variables for the embedded torus, we observed the various paths exhibited a variety of different states, particularly visible through changing patterns in the X-Y scope visualizations. Some of them seem to be quite complex and chaotic while others were very stable and didn't show any motion at all. (We might consider capturing screenshots to illustrate this.)
 
