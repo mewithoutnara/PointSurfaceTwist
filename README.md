@@ -364,9 +364,7 @@ s.scope;
 
 #### Define the path in unwrapped torus knots diagrams
 
- -> siehe (3,4)torus_knot.svg
-
---> general, but very short introduction of 2d diagrams in topology needed?
+![Torusknot_sketch1](https://github.com/mewithoutnara/PointSurfaceTwist/blob/main/T(3%2C4)_sketch.jpg) <br>
 
 The diagram of the (3,4) torus knot represents the core idea of the path on a "flattened torus" - a torus "unwrapped" into a square 2D domain, where opposite edges are identified. The knot is represented as a continuous path that moves diagonally across the square. This path has a "wrapping pattern" (p,q), where (p,q) defines the type of a torus knot as a closed curve that winds p times around the torus's major axis and q times around its minor axis. This wrapping pattern makes each torus knot unique.
 
