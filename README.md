@@ -99,7 +99,6 @@ Ndef(\torus, { arg amp = 0.5, dens = 80, trigRate=12, att=0.012, rel=0.024, stre
 	sig * amp;
 }).play
 );
-
 ```
 
 This initial method reflects a shift from geometric intuition to a more algebraic or structural perspective, grounded in:
@@ -112,11 +111,37 @@ We are looking for counter-intuitive interpretations of the torus, which may lea
 
 ### Torus embedded in Euclidian space
 
+While we can interpret a torus as S¹×S¹ = T², we couldn't yet finde a corresponding approach for the Möbius strip. Though, the torus as well as the Möbius strip can be equivalently embedded in Euclidian three dimensional space.  This is a short documentation on our approach in SuperCollider. It follows (again) a parametrical representation of the Torus and the Möbius strip, which later can be used for a sonification. 
+
+We decided to use different variables for the torus and Möbius strip to better reflect and understand the ways they are embedded in 3d space. For the torus u and v are used as they both define an angle and are standard parameters for describing a surface. The same variables are used on mathworld.wolfram.com which makes comparison much easier. 
+
+```sc
+// torus
+/\*
+there are three typical states for a torus: ring torus, horn torus and spindle torus:
+\~c > \~a returns a ring torus
+\~c = \~a returns a horn torus
+\~c < \~a returns a spindle torus
+\*/
+(
+\~c = 1; // center (major radius) --> radius circle 1
+\~a = 0.5; // axis (minor radius) --> radius circle 2
+
+\~u = pi; // u ∈ \[0, 2pi) --> controls where you are along the major circle
+\~v = 0.5pi; // v ∈ \[0, 2pi) --> controls where you are along the minor circle
+
+x = (\~c + (\~a  cos(\~v)))  cos(\~u);
+y = (\~c + (\~a  cos(\~v)))  sin(\~u);
+z = \~a \* sin(\~v);  // if z = 0, the torus is flat
+\[x, y, z\];
+)
+```
+
+(Pictures of ring torus, horn torus, spindle torus, )
+
 ### Möbius strip embedded in Euclidian space
 
-A Möbius strip can be interpreted and represented in various ways. This is a short documentation on our approach in SuperCollider. It follows a parametrical representation of the Möbius strip, which later can be used for a sonification.
-
-To obtain discrete data, which is useful for a sonification, we are first implementing a parametrical representation of the Möbius strip in SuperCollider. This allows us to get discrete values i.e. points on the continuous surface of the Möbius strip, mapped into 3 dimensional Euclidian space. To represent the Möbius strip as such a parametric surface, a line segment can be rotated around a (unit) circle and – to realise the twist of the Möbius strip – be rotated half a turn around its own midpoint as well. As we are not mathematicians we didn't come up with such an equation ourselves, but we can find one on mathworld.wolfram.com as well as on Wikipedia.
+To obtain discrete data, we are first implementing a parametrical representation of the Möbius strip in SuperCollider. This allows us to get discrete values i.e. points on the continuous surface of the Möbius strip, mapped into 3 dimensional Euclidian space. To represent the Möbius strip as such a parametric surface, a line segment can be rotated around a (unit) circle and – to realise the twist of the Möbius strip – be rotated half a turn around its own midpoint as well. As we are not mathematicians we didn't come up with such an equation ourselves, but we can find one on mathworld.wolfram.com as well as on Wikipedia.
 
 According to both websites the Möbius band can be represented parametrically by points with the coordinates x	=	(R+s cos(1/2t)) cos t y	=	(R+s cos(1/2t)) sin t z	=	s sin(1/2t) where t ∈ \[0, 2pi) and s ∈ \[−w, w\]. t describes the rotation angle, i.e. where we are on the (unit) circle around which the line segment rotates and s describes the position of the point on the line segment. w defines the width of the line segment, i.e. of the Möbius strip and R the radius of the Möbius strip (or of the circle?).
 
@@ -133,34 +158,89 @@ y = (\~radius + (\~s  cos(0.5  \~t)))  sin(\~t);
 z = \~s  sin(0.5  \~t);
 \[x, y, z\];
 )
-
-//  ∈ reads "in"
-// reads "parentheses",  "[" reads "square bracket"
 ```
 
 https://mathworld.wolfram.com/MoebiusStrip.html
 
 ### 
 
-### direct sonification of paths on the torus surface
+### Direct sonification of paths on the surface of a torus or a Möbius strip
 
-The equations used to embed the torus and the Möbius strip into Euclidian space can be played directly in SuperCollider:
+We've already done some experiments with the equations, but somehow skipped the most direct approach until David Pirro brought it up in a meeting and said "why don't you just .play the function?" Sometimes the most obvious and most intuitive things are too close to see. This is an adaption of some code examples David was sending us:
 
 ```sc
-SuperCollider Code
+// torus
+~c = 1;
+~a = 0.5;
+~freq = 500.0; 
+~freqB = 20.0;
+~amp = 0.05;
+
+{
+	var x = (~c + (~a * SinOsc.ar(~freqB, pi/2))) * SinOsc.ar(~freq, pi/2);
+	var y = (~c + (~a * SinOsc.ar(~freqB, pi/2))) * SinOsc.ar(~freq);
+	var z = ~a * SinOsc.ar(~freqB);
+	Out.ar([0,1], [x + (z * 0.5), y - (z * 0.5)] * ~amp);
+}.play;
+
+s.scope;
 ```
 
-#### similarities and transition (scope) 
+For a Möbius strip, we can basically take the same code and generate a path which follows the edge of the Möbius strip:
 
-As we experimented with the code block transforming between a torus and a Möbius strip, we observed that the torus exhibited a variety of different states, particularly visible through the changing patterns in the X-Y scope visualizations. (We might consider capturing screenshots to illustrate this.)
+```sc
+(
+// Möbius like path on the surface of a torus
+~c = 1;
+~a = 0.5;
+~freq = 500.0; // t ∈ [0, 2pi) --> (between 0 and 2pi)
+~freqB = 250; // t ∈ [0, 2pi) --> (between 0 and 2pi)
+~amp = 0.05;
+{
+	var x = (~c + (~a * SinOsc.ar(~freqB, pi/2))) * SinOsc.ar(~freq, pi/2);
+	var y = (~c + (~a * SinOsc.ar(~freqB, pi/2))) * SinOsc.ar(~freq);
+	var z = ~a * SinOsc.ar(~freqB);
+	Out.ar([0,1], [x + (z * 0.5), y - (z * 0.5)] * ~amp);
+}.play;
+)
 
-This made us wonder: could these states correspond to what are known as torus knots? -> check shuoxin-joseph-reference
+s.scope;
+```
 
-#### 
+  
+If we want to cover the surface of the Möbius strip in the same way as we did for the torus, we have to take in account that s ∈ \[−w, w\]. So instead of taking a single point on s, we implement the s ∈ \[−w, w\] as the traverse motion across the width of the strip. For this example we use again the variables corresponding to the Möbius strip:
+
+```sc
+(
+~r = 1;
+~w = 0.5;
+~freq = 150; 
+~freqB = 500.0;
+~amp = 0.05;
+
+{
+	var s = LFTri.ar(~freqB).range(~w * -1, ~w); // s ∈ [−w, w]
+	var x = (~r + (s * SinOsc.ar(0.5 * ~freq, pi/2))) * SinOsc.ar(~freq, pi/2);
+	var y = (~r + (s * SinOsc.ar(0.5 * ~freq, pi/2))) * SinOsc.ar(~freq);
+	var z =  s * SinOsc.ar(0.5 * ~freq);
+	Out.ar(0, [x + (z * 0.5), y - (z * 0.5)] * ~amp);
+}.play
+)
+
+s.scope;
+```
+
+// which values would cover most of the Möbius strip surface?
+
+### similarities and transition (scope) 
+
+While experimenting with different variables for the embedded torus, we observed the various paths exhibited a variety of different states, particularly visible through changing patterns in the X-Y scope visualizations. Some of them seem to be quite complex and chaotic while others were very stable and didn't show any motion at all. (We might consider capturing screenshots to illustrate this.)
+
+This made us wonder: could these states correspond to what are known as torus knots? 
 
 ### Torus knots - sonifying closed paths on the torus surface
 
-If we follow a path on the torus that is looping through the hole q times ("minor circle") and revolves p times ("major circle") before joining its end and if p and q are relatively prime, we get what is called a torus knot. In this context we're especially interested in exploring the role of the parameters p, q. Since p, q define different types of torus knots, perhaps by manipulating these values, we can better understand the underlying structure of the transformations. For our sonification study, we focus for now only on prime torus knots. These are knots that form a single path — not multiple loops (links) . 
+If we follow a path on the surface of the torus that wraps around the major circle p times and around the minor circle q times, and this path joins its own end, then we get what is called a torus knot - where p and q are coprime integers: gcd(p,q) =1 (i.e. their only common divisor is 1). In this context we're especially interested in exploring the role of the parameters p, q. Since p, q define different types of torus knots, perhaps by manipulating these values, we can better understand the underlying structure of the transformations. 
 
 We can implement p and q in the Torus equation like this:
 
