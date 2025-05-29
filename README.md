@@ -186,7 +186,7 @@ We've already done some experiments with the equations, but somehow skipped the 
 s.scope;
 ```
 
-For a Möbius strip, we can basically take the same code and generate a path which follows the edge of the Möbius strip:
+For freqB = freq * 0.5 we get a path on the surface of the torus which is equivalent to the edge of a Möbius strip:
 
 ```sc
 (
