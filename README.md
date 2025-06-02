@@ -11,33 +11,32 @@ Our exploration is rooted in the convergence between theoretical speculation and
 
 # Inside- and Outsideness - Oscillating between Intuition and Counter-Intuition
 
-We can learn a lot about intuition and counter-intuition while working with topological structures. Though the "really high-bouncing topologists not only avoid anything like pictures of these things, they mistrust them. (...) we can, however, get to an understanding of their goal by easy stages, and by looking at certain shapes (or "spaces") from the topologists" point of view, if we start with ones that we can see and feel" (barr, p.2) A very intuitive approach would be to do exactly that: Following the ones we can see (or hear) and feel. The counter-intuitive seems to come in when we trust the high-bouncing topologists who mistrust the pictures and start to look just at the formulas. But as one might expect and also as we will show, intuition and counter-intuition are much more complex and won't just stay on one sight but rather appear on both paths. Working with very abstract formulas or definitions can feel at one point very intuitive, while trying to understand topological structures intuitively by looking at them has its limits and might turn into a very counter-intuitive process. In the working process we have experienced both and is this oscillation between intuition and counter-intuition which interests us. This is why we consider (sound) pictures as well as formalizations in our theoretical and experimental research practice.  The two topological structures we are interested in are both well known in topology and while they have a few things in common, they also have some crucially different characteristics. 
+We can learn a lot about intuition and counter-intuition while working with topological structures. Though the "really high-bouncing topologists not only avoid anything like pictures of these things, they mistrust them. (...) we can, however, get to an understanding of their goal by easy stages, and by looking at certain shapes (or "spaces") from *the topologists" point of view,* if we start with ones that we can see and feel" (barr, p.2) A very intuitive approach would be to do exactly that: Following the ones we can see (or hear) and feel. The counter-intuitive seems to come in when we trust the high-bouncing topologists who mistrust the pictures and start to look just at the formulas. But as one might expect and also as we will show, intuition and counter-intuition are much more complex and won't just stay on one sight but rather appear on both paths. Working with very abstract formulas or definitions can feel at one point very intuitive, while trying to understand topological structures intuitively by looking at them has its limits and might turn into a very counter-intuitive process. In the working process we have experienced both and is this oscillation between intuition and counter-intuition which interests us. This is why we consider (sound) pictures as well as formalizations in our theoretical and experimental research practice.  The two topological structures we are interested in are both well known in topology and while they have a few things in common, they also have some crucially different characteristics. 
 
 ## Torus
 
-Topological Characteristics: 2d, orientable, 0 edges, 0 boundaries
+*Topological Characteristics: 2d, orientable, 0 edges, 0 boundaries*
 
-> Shuoxin: Does a torus have an "inside" and "outside"?
+> **Shuoxin: Does a torus have an "inside" and "outside"?**
 
   
-A torus embedded in 3D space can indeed be said to have a well-defined inside and outside that separates the space around it. What happens on the torus is you can define a continuous function that assigns to each point a vector (think of it as an arrow: v) pointing orthogonally outward or inward. If you zoom in on the surface of the torus, it looks locally like a little disc — a flat, round patch — and the arrow should be perpendicular to the disc. The key idea is  that you can define such a continuous family of vectors in a way that, even if you start at a point and go around a loop and return to the original point, the arrow still points the same way — This property is called orientability. 
+A torus embedded in 3D space can indeed be said to have a well-defined inside and outside that separates the space around it. What happens on the torus is you can define a continuous function that assigns to each point a vector (think of it as an arrow: *v*) pointing orthogonally outward or inward. If you zoom in on the surface of the torus, it looks locally like a little disc — a flat, round patch — and the arrow should be perpendicular to the disc. The key idea is  that you can define such a continuous family of vectors in a way that, even if you start at a point and go around a loop and return to the original point, the arrow still points the same way — This property is called *orientability*. 
 
-Because the torus is orientable, you can consistently define what's "inside" and what's "outside". Of course you can choose to call either side the "inside" — the choice of inside/outside corresponds to the choice of the arrow: v or -v for this vector, since both are perpendicular. 
+Because the torus is orientable, you can consistently define what's "inside" and what's "outside". Of course you can choose to call either side the "inside" — the choice of inside/outside corresponds to the choice of the arrow: *v* or *-v* for this vector, since both are perpendicular. 
 
-In contrast, a Möbius strip doesn't allow for this kind of consistent choice — it's unorientable. If you try to define arrows the same way and move around the strip, you'll find the arrow flips direction when you return. That's why the Möbius strip has only one side and no clear separation between inside and outside.
+In contrast, a Möbius strip doesn't allow for this kind of consistent choice — it's nonorientable. If you try to define arrows the same way and move around the strip, you'll find the arrow flips direction when you return. That's why the Möbius strip has only one side and no clear separation between inside and outside.
 
 ## Möbius strip
 
-Topological Characteristics: 2d, non-orientable, 1 edge, 1 boundary
+*Topological Characteristics: 2d, non-orientable, 1 edge, 1 boundary*
 
 > Joseph: How can there be "opposite" sides of a Möbius strip, while it has just one side?
 
-- A Möbius strip has only one side and one edge. This is very counter-intuitive as one could draw a point on one side and another one exactly on the opposite side. But topologically a surface is infinitely thin so the two points would coincide. 
--  As a Möbius strip has only one side and one edge, it is non-orientable. That means the surface can't be oriented as a torus can be. When moving something, e.g. a spiral, along the Möbius strip its orientation changes after "one round" and it goes into the opposite direction. That means it can't be oriented on the Möbius surface in any specific direction and there is no orientation.
+A Möbius strip has only one side and one edge. This is very counter-intuitive as one could draw a point on one side and another one exactly on the opposite side. But topologically a surface is infinitely thin so the two points would coincide. 
 
-We see a lot of potential for speculative thinking in the oscillation between intuition and counter-intuition. Concurrently it isn't obvious what is actually meant by saying something is intuitive or counter-intuitive. So how can we distinguish the intuitive from the counter-intuitive while working on mathematical and mechanical approaches? At what point are we following a "counter-intuitive" and when a more "intuitive" path? O are we just walking on the Möbius strip of our intuition?
+We see a lot of potential for speculative thinking in the oscillation between intuition and counter-intuition. Concurrently it isn't obvious what is actually meant by saying something is intuitive or counter-intuitive. So how can we distinguish the intuitive from the counter-intuitive while working on mathematical and mechanical approaches? At what point are we following a "counter-intuitive" and when a more "intuitive" path? 
 
-Walking along a Möbius strip is a like following an intuitive and counter-intuitive path at the same time. While actually always being on the same side (as it has only one side), it might feel as there are two sides and if as at one point on is on the intuitive "side" and at another point like being on the counter-intuitive "side".  But there are no two sides and what is intuitive and what is counter-intuitive can't be "oriented".
+Walking along a Möbius strip is a like following an intuitive and counter-intuitive path at the same time. While actually always being on the same side (as it has only one side), it might feel as there are two sides and if as at one point on is on the intuitive "side" and at another point like being on the counter-intuitive "side".  But there are no two sides and what is intuitive and what is counter-intuitive can't be oriented.
 
 # Topological interpretations and sound synthesis
 
@@ -53,7 +52,7 @@ Using imagination is one aspect of understanding the torus and other geometrical
 
 ## performative
 
-For the Speculative Sound Synthesis Symposium 2024 we have developed a lecture performance, addressing aspects of topology, sound synthesis and (counter-)intuition. 
+For the Speculative Sound Synthesis Symposium 2024 we have developed a [lecture performance](https://speculativesoundsynthesis.iem.sh/symposium/docs/proceedings/baader_tan/), addressing aspects of topology, sound synthesis and (counter-)intuition. 
 
 ## parametrical
 
@@ -70,7 +69,7 @@ We found different ways to parametrically sonify topological structures:
 
 A torus can be interpreted as a Cartesian product S¹×S¹ of two circles:
 
-In SuperCollider we create a discrete version of S¹×S¹ with \~density points. \~torus now holds an array of pairs of points (?).
+In SuperCollider we create a discrete version of S¹×S¹ with *\~density* points. *\~torus* now holds an array of pairs of points (?).
 
 ```sc
 (
@@ -115,7 +114,7 @@ We are looking for counter-intuitive interpretations of the torus, which may lea
 
 While we can interpret a torus as S¹×S¹ = T², we couldn't yet finde a corresponding approach for the Möbius strip. Though, the torus as well as the Möbius strip can be equivalently embedded in Euclidian three dimensional space.  This is a short documentation on our approach in SuperCollider. It follows (again) a parametrical representation of the Torus and the Möbius strip, which later can be used for a sonification. 
 
-We decided to use different variables for the torus and Möbius strip to better reflect and understand the ways they are embedded in 3d space. For the torus u and v are used as they both define an angle and are standard parameters for describing a surface. The same variables are used on mathworld.wolfram.com which makes comparison much easier. 
+We decided to use different variables for the torus and Möbius strip to better reflect and understand the ways they are embedded in 3d space. For the torus u and v are used as they both define an angle and are standard parameters for describing a surface. The same variables are used on [mathworld.wolfram.com](http://mathworld.wolfram.com) which makes comparison much easier. 
 
 ```sc
 // torus
@@ -143,11 +142,17 @@ z = \~a \* sin(\~v);  // if z = 0, the torus is flat
 
 ### Möbius strip embedded in Euclidian space
 
-To obtain discrete data, we are first implementing a parametrical representation of the Möbius strip in SuperCollider. This allows us to get discrete values i.e. points on the continuous surface of the Möbius strip, mapped into 3 dimensional Euclidian space. To represent the Möbius strip as such a parametric surface, a line segment can be rotated around a (unit) circle and – to realise the twist of the Möbius strip – be rotated half a turn around its own midpoint as well. As we are not mathematicians we didn't come up with such an equation ourselves, but we can find one on mathworld.wolfram.com as well as on Wikipedia.
+This apporach is very similar as the embedding of the torus in Euclidian space. To obtain discrete data we work with a parametrical representation of the Möbius strip. This allows us to get discrete values i.e. points on the continuous surface of the Möbius strip, mapped into 3 dimensional Euclidian space. To represent the Möbius strip as such a parametric surface, a line segment can be rotated around a (unit) circle. To realise the twist of the Möbius strip it must be rotated half a turn around its own midpoint as well. As we are not mathematicians we didn't come up with such an equation ourselves, but we can find commensurable equations on [mathworld.wolfram.com](https://mathworld.wolfram.com/MoebiusStrip.html) as well as on Wikipedia.
 
-According to both websites the Möbius band can be represented parametrically by points with the coordinates x	=	(R+s cos(1/2t)) cos t y	=	(R+s cos(1/2t)) sin t z	=	s sin(1/2t) where t ∈ \[0, 2pi) and s ∈ \[−w, w\]. t describes the rotation angle, i.e. where we are on the (unit) circle around which the line segment rotates and s describes the position of the point on the line segment. w defines the width of the line segment, i.e. of the Möbius strip and R the radius of the Möbius strip (or of the circle?).
+According to both websites the Möbius band can be represented parametrically by points with the coordinates   
+  
+x	=	(R+s cos(1/2t)) cos t   
+y	=	(R+s cos(1/2t)) sin t   
+z	=	s sin(1/2t)   
+  
+where t ∈ [0, 2pi) and s ∈ [−w, w]. t describes the rotation angle, i.e. where we are on the (unit) circle around which the line segment rotates and s describes the position of the point on the line segment. w defines the width of the line segment, i.e. of the Möbius strip and R the radius of the Möbius strip.
 
-This equation will return us any cartesian point on a parametrical Möbius strip. To use the function in SuperCollider we only have to take care to put some extra brackets as SuperCollider doesn't calculate according to "Punkt vor Strich" but reads straight from left to right.
+This equation returns any cartesian point on a parametrical Möbius strip. To use the function in SuperCollider we only have to use some extra brackets as SuperCollider doesn't calculate according to "Punkt vor Strich" but reads straight from left to right.
 
 ```sc
 (
@@ -162,13 +167,9 @@ z = \~s  sin(0.5  \~t);
 )
 ```
 
-https://mathworld.wolfram.com/MoebiusStrip.html
-
-### 
-
 ### Direct sonification of paths on the surface of a torus or a Möbius strip
 
-We've already done some experiments with the equations, but somehow skipped the most direct approach until David Pirrò brought it up in a meeting and asked "why don't you just .play the function?" Sometimes the most obvious and most intuitive things are too close to see. This is an adaption of some code examples David was sending us:
+We've already done some sound experiments with the equations, but somehow skipped the most direct approach until David Pirrò brought it up in a meeting and asked "why don't you just .play the function?" Sometimes the most obvious and most intuitive things are too close to see. This is an adaption of some code examples David was sending us:
 
 ```sc
 // torus
@@ -188,7 +189,7 @@ We've already done some experiments with the equations, but somehow skipped the 
 s.scope;
 ```
 
-For freqB = freq \* 0.5 we get a path on the surface of the torus which is equivalent to the edge of a Möbius strip:
+For freqB = freq * 0.5 we get a path on the surface of the torus which is equivalent to the edge of a Möbius strip:
 
 ```sc
 (
@@ -235,13 +236,13 @@ s.scope;
 
 ### Similarities and transition (scope) 
 
-While experimenting with different variables for the embedded torus, we observed the various paths exhibited a variety of different states, particularly visible through changing patterns in the X-Y scope visualizations. Some of them seem to be quite complex and chaotic while others were very stable and didn't show any motion at all. (We might consider capturing screenshots to illustrate this.)
+While experimenting with different variables for the embedded torus, we observed the various paths exhibited a variety of different states, particularly visible through changing patterns in the X-Y scope visualizations. Some of them seem to be quite complex and chaotic while others were very stable and didn't show any motion at all. *(We might consider capturing screenshots to illustrate this.)*
 
-This made us wonder: could these states correspond to what are known as torus knots? 
+This made us wonder: could these states correspond to what are known as ***torus knots***? 
 
 ### Torus knots - sonifying closed paths on the torus surface
 
-If we follow a path on the surface of the torus that wraps around the major circle p times and around the minor circle q times, and this path joins its own end, then we get what is called a torus knot - where p and q are coprime integers: gcd(p,q) =1 (i.e. their only common divisor is 1). In this context we're especially interested in exploring the role of the parameters p, q. Since p, q define different types of torus knots, perhaps by manipulating these values, we can better understand the underlying structure of the transformations. 
+If we follow a path on the surface of the torus that wraps around the major circle *p* times and around the minor circle *q* times, and this path joins its own end, then we get what is called a torus knot - where *p* and *q* are coprime integers: gcd(*p,q*) =1 (i.e. their only common divisor is 1). In this context we're especially interested in exploring the role of the parameters p, q. Since p, q define different types of torus knots, perhaps by manipulating these values, we can better understand the underlying structure of the transformations. 
 
 We can implement p and q in the Torus equation like this:
 
@@ -252,7 +253,7 @@ z = ~a * sin(~v * ~q);
 [x, y, z];
 ```
 
-where \~c is still the center (major radius) and \~a the axis (minor radius). \~p and \~q must be both integers and \~u = \~v. This parameterization defines a (p,q) torus knot as a closed curve that winds p times around the torus's major axis and q times around its minor axis.
+where \~c is still the center (major radius) and \~a the axis (minor radius). \~p and \~q must be both integers and \~u = \~v. This parameterization defines a (*p,q*) torus knot as a closed curve that winds p times around the torus's major axis and q times around its minor axis.
 
 As \~u = \~v, we replace \~u and \~v with \~phi:
 
@@ -291,7 +292,7 @@ Ndef(\torusKnot, {
 s.scope; // use x, y scope
 ```
 
-We can calculate Torus knots by using the greatest common divisor (gcd) of p and q (as p and q relatively prime) and add them into a list:
+We can calculate Torus knots by using the greatest common divisor *(gcd)* of p and q (as p and q relatively prime) and add them into a list:
 
 ```sc
 (
@@ -364,26 +365,43 @@ s.scope;
 
 #### Define the path in unwrapped torus knots diagrams
 
-![T(3,4)_sketch1](images/T(3,4)_sketch.jpg) <br>
+![Torusknot_sketch1](https://github.com/mewithoutnara/PointSurfaceTwist/blob/main/images/T(3%2C4)_sketch.jpg)
 
-The diagram of the (3,4) torus knot represents the core idea of the path on a "flattened torus" - a torus "unwrapped" into a square 2D domain, where opposite edges are identified. The knot is represented as a continuous path that moves diagonally across the square. This path has a "wrapping pattern" (p,q), where (p,q) defines the type of a torus knot as a closed curve that winds p times around the torus's major axis and q times around its minor axis. This wrapping pattern makes each torus knot unique.
+The diagram of the (3,4) torus knot represents the core idea of the path on a "flattened torus" - a torus "unwrapped" into a square 2D domain, where opposite edges are identified. The knot is represented as a continuous path that moves diagonally across the square. This path has a "wrapping pattern" (*p,q*), where (*p,q*) defines the type of a torus knot as a closed curve that winds *p* times around the torus's major axis and *q* times around its minor axis. This wrapping pattern makes each torus knot unique.
 
 The path is drawn as a line starting from the bottom-left and moving diagonally at a constant slope. Each time as the line exits the square on the right or top, it re-enters from the opposite side, creating the path traveling on the surface of a torus. Once the path returns to its starting point, a closed loops is formed — representing the torus knot.
 
-Mathematically, this happens when (p,q) have no common factor other than 1: 
+Mathematically, this happens when (*p,q*) have no common factor other than 1: 
 
-if gcd(p,q) = 1
+if gcd(*p,q*) = 1
 
-Otherwise, the the result is not one knot, but torus link made of several separate loops (more than one component):
+Otherwise, the the result is not one knot, but torus *link* made of several separate loops (more than one component):
 
-if gcd(p,q) > 1
+if gcd(*p,q*) > 1
 
 #### Creating other prime torus knot diagrams from an unwrapped torus representation 
 
-#### Sonifiying the parametrization as a study of the properties of torus knots -Using paths in unwrapped torus knots diagrams as graphical notations for shepard tones
+#### Sonifying unwrapped torus knot diagrams 
+
+The unwrapped torus knot diagrams show continuously rising (or falling) slopes. Interpreting these by the use of Shepard is not just an interesting intuition. Shepard notes are also a mathematical interpretation for (p, q) of a torus knot or for *(u, v)* of a torus. These variables are continuously rising  
+
+Sonifiying the parametrization as a study of the properties of torus knots -Using paths in unwrapped torus knots diagrams as graphical notations for shepard tones
+
+A direct sonification of the unwrapped torus diagrams as Shepard tones can look like this: 
 
 ```
-SuperCollider Code
+(
+// torus knots
+~p = 4;
+~q = 5;
+
+Ndef(\shepBasic, {
+    var intvs, amps, sig, pan;
+	#intvs, amps = Shepard.kr(~p + ~q, [~p, ~q] * 0.01, 5, 1.5);
+    sig = SinOsc.ar((intvs + 60).midicps, 0, amps);
+    Mix(sig) * 0.05
+}).play;
+)
 ```
 
 ### 
@@ -402,43 +420,43 @@ SuperCollider code
 
 Text from Stockhausen
 
-In How Time Passes, Stockhausen explores how music unfolds on both macro and micro levels of time. He attempts to approach rhythm, time, and structure through mathematical relationships.
+In *How Time Passes*, Stockhausen explores how music unfolds on both **macro** and **micro** levels of **time**. He attempts to approach rhythm, time, and structure through **mathematical relationships**.
 
 ### Keyword Summaries
 
-- Subharmonic Series of Proportions
+- **Subharmonic Series of Proportions**
 
 A set of time proportions derived from the inverse of a harmonic series (e.g., 1:2:3 becomes 1:½:⅓), used to structure durations and rhythms in a way that mirrors acoustic subharmonics. Stockhausen uses this to build time relationships that feel “natural” or “resonant” in proportion.
 
-- Formant-Spectra 
+- **Formant-Spectra** 
 
-A concept borrowed from acoustics, referring to the concentration of spectral energy around certain frequencies (formants). Stockhausen extends this to time and rhythm, creating analogous "formant structures" in durations or intensities that shape perception—like a timbre signature applied to time.
+A concept borrowed from acoustics, referring to the concentration of spectral energy around certain frequencies (formants). Stockhausen extends this to **time and rhythm**, creating analogous "formant structures" in durations or intensities that shape perception—like a timbre signature applied to time.
 
 - formants - single ‚harmonic' divisions (p.17) \[...\] the number and combination of formants defines what is commonly called the tone-colour of the spectrum (p.18). 
 - consonant formants - the octave (duplet), fifth (triplet), the third (quintuplet), seventh (septuplet)
 - formant-rhythm (tone-colour) of a fundamental tone.
-- Time-Fields
+- **Time-Fields**
 
 Temporal regions or zones where musical events are grouped and organized. Each field acts like a spatial container for durations, rhythms, or even densities. Time-fields may overlap, nest, or evolve, forming a layered temporal structure.
 
-- Field-Sizes
+- **Field-Sizes**
 
 The measurable or perceived size of a time-field, determined by factors like duration, density of events, or intensity. Field-size governs how “large” or “small” a temporal zone feels in relation to the rest of the structure.
 
-- Field-Harmony
+- **Field-Harmony**
 
-The vertical or simultaneous interaction between multiple time-fields, analogous to how harmonic intervals work in pitch. Field-harmony describes how these time-based zones resonate, clash, or align with one another to create structural tension or resolution.
+The vertical or simultaneous interaction between multiple time-fields, analogous to how harmonic intervals work in pitch. Field-harmony describes how these time-based zones **resonate, clash, or align** with one another to create structural tension or resolution.
 
-- Field-Intensity
+- **Field-Intensity**
 
-The dynamic energy level within a time-field, which can be shaped by volume, activity level, or rhythmic complexity. It adds expressive contrast between fields and contributes to a sense of contour or direction in time.
+The **dynamic energy level** within a time-field, which can be shaped by volume, activity level, or rhythmic complexity. It adds expressive contrast between fields and contributes to a sense of contour or direction in time.
 
-- Field-Density
+- **Field-Density**
 
 The concentration of events (notes, attacks, gestures) within a time-field. A dense field might have many rapid notes; a sparse field might have only a few stretched over time. Density helps articulate texture and motion in the time-space.
 
   
-Can we have proportion-series of fields? Can we "cut" the torus like this?
+***Can we have proportion-series of fields? Can we "cut" the torus like this?***
 
 ## 
 
