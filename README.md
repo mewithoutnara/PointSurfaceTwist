@@ -7,11 +7,39 @@ bookCollapseSection: true
 
 # Point, Surface, Twist
 
-
 Our exploration is rooted in the convergence between theoretical speculation and practical experimentation within sound synthesis. Drawing inspiration from Karlheinz Stockhausen's insights into auditory perception, particularly the transformative effects of manipulating point-like signals, we explore properties of specific topological structures. In particular, we are interested in the topological composition of the torus and its de-compositional transformation into the Möbius strip. Through our experimentation with SuperCollider, we aim to understand whether the intrinsic qualities of these structures can be elucidated through sound synthesis, while we also explore the extrinsic factors that influence their manifestation. We ask, whether the certain contradictions and tensions inherent in topological properties can be perceived through acoustics and spatialization. This in turn would allow us to bridge the realms of the internal and the external in explorative sound synthesis.
 
-# Inside- and Outsideness — Oscillating Between Intuition and Counter-Intuition
+# Research Origin — Sonic Time and Rotating Form
 
+Before the conceptual language of topology entered our process, this research began with an auditory intuition: a desire to explore how time could be shaped and spatialized through sound. The first spark came from Karlheinz Stockhausen’s essay How Time Passes (Wie die Zeit vergeht...), where he reimagines musical time not merely as succession, but as structure — with rhythms behaving like fields, and durations bending like harmonic intervals. His vision of temporal form deeply influenced how we began to think about surfaces, continuity, and resonance.
+
+Parallel to this theoretical impulse, we started constructing a rotating loudspeaker installation. Inspired loosely by Stockhausen’s own rotation table, this mechanical experiment sought to explore how circular motion, spatial projection, and signal behavior could be used to model — or distort — the perception of form. In retrospect, this early prototype embodied a pre-topological intuition: it wasn’t yet about the torus, but it was already about rotation, about twisted surfaces of perception, and about how a sound can move across an undefined geometry.
+
+Together, these two influences — Stockhausen’s speculative thinking on time, and our own experiment with rotation and spatial sound installation — became the first twist in what would evolve into a study of topological forms.
+
+This early experiment laid the foundation for what we later identified as a mechanical interpretation of the torus.
+
+## Topological Interpretations and Sound Synthesis
+
+Our research and practical experimentation on topology has so far followed different paths: A mechanical interpretation of the torus realised by a rotating loudspeaker installation, a lecture performance and various parametrical interpretations of the torus and the Möbius strip, realised as sonifications in SuperCollider.
+
+### Mechanical
+
+To encounter the counter-intuitive aspects of the torus in a very intuitive way we have built a mechanical rotating loudspeaker installation. The installation maps the topological structures of the torus into space by playing the sound on speakers which rotate on two different axes. This is inspired by the interpretation of the torus as a Cartesian product of two circles. Each of  the circles is formed by points,  revolving around a centre.
+
+Inspired by this, the first signals we played on the rotating loudspeakers were point like signals. Here something very intuitive clashes with something counter-intuitive: The rotation and circular movement on two axes can be seen as the interpretation of the Cartesian product of two circles. But the sound itself won't form any torus or Cartesian product in space.  The sound won't put a point at a certain distance and at a certain place in space. It moves on, gets reflected, absorbed, transmitted through materials and transforms its energy into heat.  We can't, and we don't want to control this behaviour. The installation itself is our interpretation of the torus and how this interpretation sounds like, is what we are interested in. And it happened in fact, that it sounded like two circles.
+
+Using imagination is one aspect of understanding the torus and other geometrical objects. Speculation we use to place those objects into another domain. That can be by thinking about possible transitions and movement within our actual physical space. This mechanical interpretation and the transformation into space is intuition and speculation rather than calculation.
+
+### Performative
+
+For the Speculative Sound Synthesis Symposium 2024 we have developed a [lecture performance](https://speculativesoundsynthesis.iem.sh/symposium/docs/proceedings/baader_tan/), addressing aspects of topology, sound synthesis and (counter-)intuition. In the performance we exposed our speculative approach of sonifying the torus parametrically.
+
+### Parametrical
+
+Interpreting the Cartesian product of two circles i.e. a torus, by rotating two loudspeakers on different axes is a quite intuitive approach as soon as we understand the idea of two circles forming a torus. The result however is not that intuitive as we neither see or hear something that looks or sounds like a torus. This interpretation is an abstract interpretation of **S¹ × S¹**. If we want to actually calculate **S¹ × S¹** and obtain discrete data that can be used for sound synthesis or sonification, we don't get around a paremetrical description of the Torus. Admittedly, as topology doesn't care about distance or any measures, paremetrizations might lead us somehow away from topology. However, parametrizations make it possible  to experience the structures intuitively by the means of sound and listening.
+
+# Inside- and Outsideness — Oscillating Between Intuition and Counter-Intuition
 
 We can learn a lot about intuition and counter-intuition when working with topological structures. As Barr notes, *"The really high-bouncing topologists not only avoid anything like pictures of these things, they mistrust them. (...) we can, however, get to an understanding of their goal by easy stages, and by looking at certain shapes (or 'spaces') from the topologists" point of view, if we start with ones that we can see and feel"* (Barr, p. 2).
 
@@ -20,6 +48,12 @@ A highly intuitive approach would be to do exactly that: to follow the shapes we
 Working with abstract formulas or definitions can at times feel surprisingly intuitive, while trying to intuitively grasp topological structures by observing them can quickly become disorienting or counter-intuitive. Throughout our process, we have experienced both. It is precisely this oscillation between intuition and counter-intuition which interests us.
 
 This is also why we decided to implement sound and images i.e. perceptual representations, as well as formal mathematical descriptions in our theoretical research and experimental practice.  The two topological structures we explore are well known in topology. While they share certain properties, they also differ in crucial ways.
+
+Historically, topology emerged as a study of space where measurement is not fundamental. Leibniz’s early vision of analysis situs emphasized the relations between positions rather than distances. Later, Poincaré's foundational work made this philosophical stance explicit, defining topology through continuity and transformation, without relying on metric concepts like size or length. This non-metrical approach aligns with our own investigations, where we prioritize the experiential, the continuous, and the paradoxical over the strictly quantifiable. It allows us to ask not how far things are, but how they relate — conceptually, perceptually, and sonically.
+
+While some of our methods rely on measurable parameters — such as frequency, pitch, or vector coordinates — the underlying impulse remains topological in nature. We use metrical tools to probe non-metrical questions: How do relationships, continuities, and twists translate into perception? In this sense, our approach does not oppose measurement, but rather bends it toward the articulation of spatial relations that resist quantification.
+
+# Topological Figures — Torus and Möbius Strip
 
 ## Torus
 
@@ -43,27 +77,9 @@ A Möbius strip has only one side and one edge. This can feel very counter-intui
 
 We see a lot of potential for **speculative thinking** in the oscillation between intuition and counter-intuition. Concurrently it isn't obvious what is actually meant by saying something is intuitive or counter-intuitive. So how can we distinguish the intuitive from the counter-intuitive while working on mathematical and mechanical approaches? At what point are we following a "counter-intuitive" and when a more "intuitive" path?
 
-Walking along a Möbius strip is like following an intuitive and counter-intuitive path simultaneously. While actually always being on the same side (since it only has one), it might feel as there are two sides and as you're sometimes on the intuitive one and other times on the "counter-intuitive" one. But there are no two sides — and neither can the intuitive and the counter-intuitive be clearly oriented.
+Walking along a Möbius strip is like following an intuitive and counter-intuitive path simultaneously. While actually always being on the same side (since it only has one), it might feel as there are two sides and as you're sometimes on the intuitive one and other times on the "counter-intuitive" one. But there are no two sides — and neither the intuitive nor the counter-intuitive can be clearly oriented.
 
-# Topological Interpretations and Sound Synthesis
-
-Our research and practical experimentation on topology has so far followed different paths: A mechanical interpretation of the torus realised by a rotating loudspeaker installation, a lecture performance and various parametrical interpretations of the torus and the Möbius strip, realised as sonifications in SuperCollider.
-
-## Mechanical
-
-To encounter the counter-intuitive aspects of the torus in a very intuitive way we have built a mechanical rotating loudspeaker installation. The installation maps the topological structures of the torus into space by playing the sound on speakers which rotate on two different axes. This is inspired by the interpretation of the torus as a Cartesian product of two circles. Each of  the circles is formed by points,  revolving around a centre.
-
-Inspired by this, the first signals we played on the rotating loudspeakers were point like signals. Here something very intuitive clashes with something counter-intuitive: The rotation and circular movement on two axes can be seen as the interpretation of the Cartesian product of two circles. But the sound itself won't form any torus or Cartesian product in space.  The sound won't put a point at a certain distance and at a certain place in space. It moves on, gets reflected, absorbed, transmitted through materials and transforms its energy into heat.  We can't, and we don't want to control this behaviour. The installation itself is our interpretation of the torus and how this interpretation sounds like, is what we are interested in. And it happened in fact, that it sounded like two circles.
-
-Using imagination is one aspect of understanding the torus and other geometrical objects. Speculation we use to place those objects into another domain. That can be by thinking about possible transitions and movement within our actual physical space. This mechanical interpretation and the transformation into space is intuition and speculation rather than calculation.
-
-## Performative
-
-For the Speculative Sound Synthesis Symposium 2024 we have developed a [lecture performance](https://speculativesoundsynthesis.iem.sh/symposium/docs/proceedings/baader_tan/), addressing aspects of topology, sound synthesis and (counter-)intuition. In the performance we exposed our speculative approach of sonifying the torus parametrically.
-
-## Parametrical
-
-Interpreting the Cartesian product of two circles i.e. a torus, by rotating two loudspeakers on different axes is a quite intuitive approach as soon as we understand the idea of two circles forming a torus. The result however is not that intuitive as we neither see or hear something that looks or sounds like a torus. This interpretation is an abstract interpretation of **S¹ × S¹**. If we want to actually calculate **S¹ × S¹** and obtain discrete data that can be used for sound synthesis or sonification, we don't get around a paremetrical description of the Torus. Admittedly, as topology doesn't care about distance or any measures, paremetrizations might lead us somehow away from topology. However, parametrizations make it possible  to experience the structures intuitively by the means of sound and listening.
+# Parametric Structures and Sonic Paths 
 
 During the working period we have found different ways to parametrically sonify topological structures:
 
@@ -73,7 +89,7 @@ During the working period we have found different ways to parametrically sonify 
   - as a collection of points on the surface
 - Unwrapped torus knot diagrams as Shepard tones
 
-### Torus as a Cartesian Product of Two Circles
+## Torus as a Cartesian Product of Two Circles
 
 A torus can be interpreted as a Cartesian product S¹ × S¹ of two circles:
 
@@ -118,7 +134,7 @@ This initial method reflects a shift from geometric intuition to a more algebrai
 
 We are looking for counter-intuitive interpretations of the torus, which may lead us into a more speculative domain. Interpreting the torus as **S¹** × **S¹** = **T²** seems very intuitive, as we can imagine the torus being constructed by two circles. But the result is again quite counter-intuitive: It is a representation of the torus in R², which is hard to imagine or draw. Our methodological choice is focusing on relations, mapping and structures and such algebraic approach might help us to understand and sonify the counter-intuitive topological aspects by the help of sound.
 
-### Torus Embedded in R³
+## Torus Embedded in R³
 
 While we can interpret a torus as **S¹** × **S¹** = **T²**, we haven't yet found a corresponding approach for the Möbius strip. Though, the torus as well as the Möbius strip can be equivalently embedded in **R³**.  This is a short documentation on our approach in SuperCollider. It follows a parametric representation of the Torus and the Möbius strip, which can be later used for a sonification.
 
@@ -155,7 +171,7 @@ there are three typical states for a torus: ring torus, horn torus and spindle t
 
 ![spindle torus](images/Spindle-Torus.png)
 
-### Möbius Strip Embedded in R³
+## Möbius Strip Embedded in R³
 
 This approach is very similar to the embedding of the torus in R³. To obtain discrete data, we work with a parametric representation of the Möbius strip. This allows us to sample discrete points on its continuous surface, mapped into three-dimensional Euclidian space R³.
 
@@ -186,7 +202,7 @@ z = ~s sin(0.5 ~t);
 )
 ```
 
-### Direct Sonification of Paths on the Surface of a Torus or a Möbius Strip
+## Direct Sonification of Paths on the Surface of a Torus or a Möbius Strip
 
 We've already done some sound experiments with the equations, but somehow skipped the most direct approach until David Pirrò brought it up in a meeting and asked **"why don't you just { }.play the function?"** Sometimes the most obvious and most intuitive things are too close to see. This is an adaption of some code examples David was sending us:
 
@@ -254,13 +270,13 @@ s.scope;
 
 In a meeting with the project supervisors and one other guest artist, we have discussed space filling curves. That made us wonder, which values for \~freq and \~freqB would work the best to cover as much of the surface of the Möbius strip or the torus. We didn't follow this idea further, but might do so in the future.
 
-### Similarities and Transition (scope)
+## Similarities and Transition (scope)
 
 While experimenting with different variables for the embedded torus, we observed the various paths exhibited a variety of different states, particularly visible through changing patterns in the X-Y scope visualizations. Some of them seem to be quite complex and chaotic while others were very stable and didn't show any motion at all. *(We might consider capturing screenshots to illustrate this.)*
 
 This made us wonder: could these states correspond to what are known as ***torus knots***?
 
-### Torus Knots - Sonifying Closed Paths on the Torus Surface
+## Torus Knots - Sonifying Closed Paths on the Torus Surface
 
 If we follow a path on the surface of the torus that wraps around the major circle *p* times and around the minor circle *q* times, and this path joins its own end, then we get what is called a torus knot - where *p* and *q* are coprime integers: gcd(*p*, *q*) = 1 (i.e. their greatest common divisor is 1). In this context we're especially interested in exploring the role of the parameters (*p*, *q*). Since (*p*, *q*) define different types of torus knots, perhaps by manipulating these values, we can better understand the underlying structure of the transformations.
 
@@ -292,7 +308,7 @@ z = ~a * sin(~phi * ~q);
 )
 ```
 
-This equation is equivalent with the known equation to describe a torus knot (Reference to ?**Mathworld?**) and can be played in SuperCollider by using `SinOsc`:
+This equation is equivalent with the known equation to describe a torus knot and can be played in SuperCollider by using `SinOsc`:
 
 ```sc
 (
@@ -379,13 +395,9 @@ Routine({
 s.scope;
 ```
 
-~~(As a minimal and intuitive form of interaction, we also brainstormed whether it's possible to treat a laptop trackpad as a kind of “unfolded torus diagram” — allowing us to explore different (*u*, *v*) values simply by tracing finger gestures across the surface. Could this tactile method provide an alternative way to navigate or sonify the torus knot space?)~~
+### Defining the path in unwrapped torus knot diagrams
 
-**~~?insert a short SuperCollider example where we use the MousePad to navigate through *p* and *q* values?~~**
-
-#### Defining the path in unwrapped torus knot diagrams
-
-![Torus Knot](Torusknot-1.jpeg)
+![Torus Knot](https://github.com/mewithoutnara/PointSurfaceTwist/blob/main/images/Torusknot-1.jpeg)
 
 The diagram of the (3, 4) torus knot represents the core idea of the path on a "flattened torus" — a torus "unwrapped" into a square two-dimensional domain, where opposite edges are identified. The knot is represented as a continuous path that moves diagonally across the square. This path has a "wrapping pattern" (*p, q*), where (*p, q*) defines the type of a torus knot as a closed curve that winds *p* times around the torus major axis and *q* times around its minor axis. This wrapping pattern makes each torus knot unique.
 
@@ -399,9 +411,7 @@ Otherwise, the result is not a knot, but a torus link made out of several separa
 
 if gcd(*p, q*) > 1
 
-**?Creating other prime torus knot diagrams from an unwrapped torus representation?**
-
-#### Sonifying unwrapped torus knot diagrams as Shepard tones
+### Sonifying unwrapped torus knot diagrams as Shepard tones
 
 The unwrapped torus knot diagrams show continuously rising (or falling) slopes. Interpreting these diagrams by the use of Shepard tones is first of all an intuition. But Shepard notes are also a mathematical interpretation of *phi*  (torus knot) or *u* and *v* (torus), as their values can infinitely increase because there is no boundary on a torus.
 
@@ -478,55 +488,18 @@ If we loop this Array and listen to it as a pattern, we would notice a "jump". T
 
 We will provide some sound examples in a separate file on GitHub.
 
-# Research and Inspiration for the sonification and synthesis
+# Closing Reflection — On (Not) Closing
 
-### How time passes (...Wie die Zeit vergeht...)
+This project unfolds along a surface that loops without closure. Topological structures, after all, are not defined by their size or shape, but by the way continuity persists—through twists, holds, and joins. Similarly, our research does not conclude; it curves back, folds, and twists into further questions. In that sense, it closes like a torus closes: not in finality, but in form.
 
-Text from Stockhausen
+Our investigation remains open-ended. Speculation, in our case,  is not a method of escape from rigor but a mode of attention—one that allows us to stay with intuition, contradiction, and transformation. We do not ask only what a structure is, but how it might be sensed, traced, heard.
 
-In *How Time Passes*, Stockhausen explores how music unfolds on both **macro** and **micro** levels of **time**. He attempts to approach rhythm, time, and structure through **mathematical relationships**.
+If questions persist, they invite listening rather than solving:
 
-### Keyword Summaries
+How might a topological twist shift our sense of space?
 
-- **Subharmonic Series of Proportions**
+What does it mean to follow a surface through both sound and thought?
 
-A set of time proportions derived from the inverse of a harmonic series (e.g., 1:2:3 becomes 1:½:⅓), used to structure durations and rhythms in a way that mirrors acoustic subharmonics. Stockhausen uses this to build time relationships that feel “natural” or “resonant” in proportion.
+Can perception itself fold?
 
-- **Formant-Spectra**
-
-A concept borrowed from acoustics, referring to the concentration of spectral energy around certain frequencies (formants). Stockhausen extends this to **time and rhythm**, creating analogous "formant structures" in durations or intensities that shape perception—like a timbre signature applied to time.
-
-- formants - single ‚harmonic' divisions (p.17) \[...\] the number and combination of formants defines what is commonly called the tone-colour of the spectrum (p.18).
-- consonant formants - the octave (duplet), fifth (triplet), the third (quintuplet), seventh (septuplet)
-- formant-rhythm (tone-colour) of a fundamental tone.
-- **Time-Fields**
-
-Temporal regions or zones where musical events are grouped and organized. Each field acts like a spatial container for durations, rhythms, or even densities. Time-fields may overlap, nest, or evolve, forming a layered temporal structure.
-
-- **Field-Sizes**
-
-The measurable or perceived size of a time-field, determined by factors like duration, density of events, or intensity. Field-size governs how “large” or “small” a temporal zone feels in relation to the rest of the structure.
-
-- **Field-Harmony**
-
-The vertical or simultaneous interaction between multiple time-fields, analogous to how harmonic intervals work in pitch. Field-harmony describes how these time-based zones **resonate, clash, or align** with one another to create structural tension or resolution.
-
-- **Field-Intensity**
-
-The **dynamic energy level** within a time-field, which can be shaped by volume, activity level, or rhythmic complexity. It adds expressive contrast between fields and contributes to a sense of contour or direction in time.
-
-- **Field-Density**
-
-The concentration of events (notes, attacks, gestures) within a time-field. A dense field might have many rapid notes; a sparse field might have only a few stretched over time. Density helps articulate texture and motion in the time-space.
-
-***Can we have proportion-series of fields? Can we "cut" the torus like this?***
-
-##
-
-##
-
-##
-
-#
-
-##
+In this way, the research is not finished — it is folded, continuing not toward conclusion, but toward resonance.
