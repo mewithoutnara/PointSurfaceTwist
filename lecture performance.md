@@ -1,0 +1,1 @@
+our reflection of our research and work progress in 2024, it came out as a lecture performance with our rotate loudspeaker prototype installation, on 26. Sept. 2024 at Symposium Speculative Sound Synthesis, IEM Graz.
